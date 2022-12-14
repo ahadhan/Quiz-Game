@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz_App</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase.database.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+       
+        
+        const firebaseConfig = {
+          apiKey: "AIzaSyCEUTYRAhCl7pgasNEeEqwI8_1QdXRAtHY",
+          authDomain: "project-d3708.firebaseapp.com",
+          projectId: "project-d3708",
+          storageBucket: "project-d3708.appspot.com",
+          messagingSenderId: "966365081058",
+          appId: "1:966365081058:web:82aeb786bb69ed096addbb",
+          measurementId: "G-PQH0LEYQT2"
+        };
+      
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</head>
+<body>
+
+   
+    <div class="main">
+        <h2  class="questions" id="question-1">has to change</h2>
+
+        <div class="buttons">
+            <input class="buttn" type="radio" value="a" name="answer" id="ans1" >
+            <label for="ans1" id="option-1" >answer</label> <br>
+        </div>
+        <div class="buttons">
+            <input class="buttn" type="radio" value="b" name="answer" id="ans2" >
+            <label for="ans2" id="option-2" >answer</label> <br>
+        </div>
+
+        <div class="buttons">
+            <input class="buttn" type="radio" value="c" name="answer" id="ans3" >
+            <label for="ans3" id="option-3" >answer</label> <br>
+        </div>
+        <div class="buttons">
+            <input class="buttn" type="radio" value="d" name="answer" id="ans4" >
+            <label for="ans4" id="option-4" >answer</label> <br>
+        </div>
+        <div class="bottom">
+        <button onclick="submit()" id="submit"  class="sub">Submit</button>
+        <button onclick="restart()" id="restart" class="restart"> <a href="index.html">Restart</a> </button>
+    </div>
+    </div>
+    
+
+
+       
+        
+    <script src="app.js" ></script>
+
+</body>
+</html>
